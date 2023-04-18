@@ -1,1 +1,1 @@
-# spring-restfql-example
+# spring-restfql
