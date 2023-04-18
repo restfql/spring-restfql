@@ -35,10 +35,10 @@ publishing {
 		}
 	}
 	publications {
-		library(MavenPublication) {
-			groupId = "com.restfql"
-			artifactId = "spring-restfql"
-			version = "1.0.${System.getenv("GITHUB_RUN_NUMBER")}"
+		gpr(MavenPublication) {
+			groupId "com.restfql"
+			artifactId "spring-restfql"
+			version "1.0.${System.getenv("GITHUB_RUN_NUMBER")}"
 			from components.java
 		}
 	}
