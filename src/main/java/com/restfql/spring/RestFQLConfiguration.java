@@ -21,6 +21,10 @@ import java.util.Map;
 @Configuration
 public class RestFQLConfiguration {
 
+    public RestFQLConfiguration(){
+        System.out.println("Loading the configuration RestFQLConfiguration");
+    }
+
     @RestControllerAdvice
     private class RestFQLAdvice implements ResponseBodyAdvice<Object> {
 
