@@ -19,6 +19,14 @@ dependencies {
 	implementation 'com.graphql-java:graphql-java:[16,)'
 }
 
+bootJar {
+	enabled = false
+}
+
+jar {
+	enabled = true
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
